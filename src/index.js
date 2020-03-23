@@ -20,7 +20,7 @@ class App extends Component {
                     this.setState(({ count }) =>
                         this.liked
                             ? { count: count + 1, error: "" }
-                            : { count: count + 1, error: "" }
+                            : { count: count - 1, error: "" }
                     );
                 } else {
                     this.setState(() => ({
